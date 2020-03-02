@@ -1,0 +1,25 @@
+{
+  "name": "tnodep",
+  "version": "1.0.0",
+  "description": "perro progrma",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/P3lavacas/TNodeP.git"
+  },
+  "keywords": [
+    "perro"
+  ],
+  "author": "P3lavacas",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/P3lavacas/TNodeP/issues"
+  },
+  "homepage": "https://github.com/P3lavacas/TNodeP#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}

@@ -6,15 +6,20 @@ const app = express();
 const pokemon = require('./routes/pokemon');
 const user = require ('./routes/user');
 //Middleware
-cosnt auth = require('./middleware/auth');
-cosnt notfound = require('./middleware/notfound');
-cosnt index = require('./middleware/indice');
+const auth = require('./middleware/auth');
+const notfound = require('./middleware/notfound');
+const index = require('./middleware/indice');
+const cors = require('./middleware/cors');
 
+app.use(cors);
 app.use(morgan('dev'));
 app.use(express.json());
 app.use(express.urlencoded({extended: true}))
 
-app.get("/",index);
+app.get("/", (req, res, next) => {
+  res.status(200);
+  res.send("Hola mundo");
+});
 
 app.use("/user", user);
 
